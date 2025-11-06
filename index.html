@@ -34,6 +34,33 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <style>
+    .header {
+      overflow: visible;
+    }
+    .logo {
+      position: relative;
+      z-index: 2;
+    }
+    .brand-logo {
+      height: 400px;
+      width: auto;
+      margin-top: -10px;
+      transition: transform 0.2s ease;
+      transform-origin: center;
+      cursor: zoom-in;
+      filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.15));
+    }
+    .brand-logo:hover {
+      transform: scale(1.08);
+    }
+    @media (min-width: 1200px) {
+      .brand-logo {
+        height: 110px;
+        margin-top: -24px;
+      }
+    }
+  </style>
 </head>
 
 <body class="index-page">
@@ -43,7 +70,7 @@
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="./assets/img/logo/Sk_Logo_2.png" alt="SK Creative Corner" class="brand-logo">
+        <img src="./assets/img/logo/Sk_Logo_2.webp" alt="SK Creative Corner" class="brand-logo">
         <span class="visually-hidden">SK Creative Corner</span>
       </a>
 
@@ -54,7 +81,7 @@
           <li><a href="#services">Services</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#team">Team</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="#">Dropdown 1</a></li>
               <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
@@ -70,7 +97,7 @@
               <li><a href="#">Dropdown 3</a></li>
               <li><a href="#">Dropdown 4</a></li>
             </ul>
-          </li>
+          </li> -->
           <li><a href="#contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -764,13 +791,13 @@
               <i class="bi bi-grid-3x3"></i> All Projects
             </li>
             <li data-filter=".filter-ui">
-              <i class="bi bi-phone"></i> UI/UX
+              <i class="bi bi-phone"></i> Logo
             </li>
             <li data-filter=".filter-development">
-              <i class="bi bi-code-slash"></i> Development
+              <i class="bi bi-code-slash"></i> Posters
             </li>
             <li data-filter=".filter-photography">
-              <i class="bi bi-camera"></i> Photography
+              <i class="bi bi-camera"></i> Resume
             </li>
             <li data-filter=".filter-marketing">
               <i class="bi bi-graph-up"></i> Marketing
@@ -782,13 +809,13 @@
             <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
               <article class="portfolio-entry">
                 <figure class="entry-image">
-                  <img src="./assets/img/portfolio/portfolio-1.webp" class="img-fluid" alt="" loading="lazy">
+                  <img src="./assets/img/portfolio/sk.png" class="img-fluid" alt="" loading="lazy">
                   <div class="entry-overlay">
                     <div class="overlay-content">
-                      <div class="entry-meta">UI/UX Design</div>
-                      <h3 class="entry-title">Mobile Banking App</h3>
+                      <div class="entry-meta">Logo Design</div>
+                      <h3 class="entry-title">SK Cars</h3>
                       <div class="entry-links">
-                        <a href="./assets/img/portfolio/portfolio-1.webp" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: Mobile Banking App; description: Praesent commodo cursus magna, vel scelerisque nisl consectetur.">
+                        <a href="./assets/img/portfolio/sk.png" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: Mobile Banking App; description: Praesent commodo cursus magna, vel scelerisque nisl consectetur.">
                           <i class="bi bi-arrows-angle-expand"></i>
                         </a>
                         <a href="portfolio-details.html">
@@ -801,16 +828,16 @@
               </article>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-development">
+            <!-- <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-development">
               <article class="portfolio-entry">
                 <figure class="entry-image">
-                  <img src="./assets/img/portfolio/portfolio-10.webp" class="img-fluid" alt="" loading="lazy">
+                  <img src="./assets/img/portfolio/poster_1.png" class="img-fluid" alt="" loading="lazy">
                   <div class="entry-overlay">
                     <div class="overlay-content">
-                      <div class="entry-meta">Development</div>
-                      <h3 class="entry-title">E-Learning Platform</h3>
+                      <div class="entry-meta">Poster Design</div>
+                      <h3 class="entry-title">Harini's Makeover</h3>
                       <div class="entry-links">
-                        <a href="./assets/img/portfolio/portfolio-10.webp" class="glightbox" data-gallery="portfolio-gallery-development" data-glightbox="title: E-Learning Platform; description: Nulla vitae elit libero, a pharetra augue mollis interdum.">
+                        <a href="./assets/img/portfolio/poster_1.png" class="glightbox" data-gallery="portfolio-gallery-development" data-glightbox="title: E-Learning Platform; description: Nulla vitae elit libero, a pharetra augue mollis interdum.">
                           <i class="bi bi-arrows-angle-expand"></i>
                         </a>
                         <a href="portfolio-details.html">
@@ -821,18 +848,43 @@
                   </div>
                 </figure>
               </article>
-            </div><!-- End Portfolio Item -->
+            </div> -->
+            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-development">
+  <article class="portfolio-entry">
+    <figure class="entry-image">
+      <img src="./assets/img/portfolio/poster_1.png" class="img-fluid" alt="" loading="lazy"
+           style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
+      <div class="entry-overlay">
+        <div class="overlay-content">
+          <div class="entry-meta">Poster Design</div>
+          <h3 class="entry-title">Harini's Makeover</h3>
+          <div class="entry-links">
+            <a href="./assets/img/portfolio/poster_1.png" class="glightbox" data-gallery="portfolio-gallery-development" data-glightbox="title: E-Learning Platform; description: Nulla vitae elit libero, a pharetra augue mollis interdum.">
+              <i class="bi bi-arrows-angle-expand"></i>
+            </a>
+            <a href="portfolio-details.html">
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </figure>
+  </article>
+</div>
+
+            <!-- End Portfolio Item -->
 
             <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-photography">
               <article class="portfolio-entry">
                 <figure class="entry-image">
-                  <img src="./assets/img/portfolio/portfolio-7.webp" class="img-fluid" alt="" loading="lazy">
+                  <img src="./assets/img/portfolio/portfolio_5.jpg" class="img-fluid" alt="" loading="lazy"
+                  style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
                   <div class="entry-overlay">
                     <div class="overlay-content">
-                      <div class="entry-meta">Photography</div>
-                      <h3 class="entry-title">Urban Architecture</h3>
+                      <div class="entry-meta">Resume Design</div>
+                      <h3 class="entry-title">Basic Resume</h3>
                       <div class="entry-links">
-                        <a href="./assets/img/portfolio/portfolio-7.webp" class="glightbox" data-gallery="portfolio-gallery-photography" data-glightbox="title: Urban Architecture; description: Sed ut perspiciatis unde omnis iste natus error sit voluptatem.">
+                        <a href="./assets/img/portfolio/portfolio_5.jpg" class="glightbox" data-gallery="portfolio-gallery-photography" data-glightbox="title: Urban Architecture; description: Sed ut perspiciatis unde omnis iste natus error sit voluptatem.">
                           <i class="bi bi-arrows-angle-expand"></i>
                         </a>
                         <a href="portfolio-details.html">
@@ -870,13 +922,13 @@
             <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
               <article class="portfolio-entry">
                 <figure class="entry-image">
-                  <img src="./assets/img/portfolio/portfolio-2.webp" class="img-fluid" alt="" loading="lazy">
+                  <img src="./assets/img/portfolio/Logo_1.jpg" class="img-fluid" alt="" loading="lazy">
                   <div class="entry-overlay">
                     <div class="overlay-content">
-                      <div class="entry-meta">UI/UX Design</div>
-                      <h3 class="entry-title">Smart Home Interface</h3>
+                      <div class="entry-meta">Logo Design</div>
+                      <h3 class="entry-title">NK Dairy Forms</h3>
                       <div class="entry-links">
-                        <a href="./assets/img/portfolio/portfolio-2.webp" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: Smart Home Interface; description: At vero eos et accusamus et iusto odio dignissimos ducimus.">
+                        <a href="./assets/img/portfolio/Logo_1.jpg" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: Smart Home Interface; description: At vero eos et accusamus et iusto odio dignissimos ducimus.">
                           <i class="bi bi-arrows-angle-expand"></i>
                         </a>
                         <a href="portfolio-details.html">
@@ -892,13 +944,14 @@
             <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-development">
               <article class="portfolio-entry">
                 <figure class="entry-image">
-                  <img src="./assets/img/portfolio/portfolio-11.webp" class="img-fluid" alt="" loading="lazy">
+                  <img src="./assets/img/portfolio/poster_2.png" class="img-fluid" alt="" loading="lazy"
+                   style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
                   <div class="entry-overlay">
                     <div class="overlay-content">
-                      <div class="entry-meta">Development</div>
-                      <h3 class="entry-title">Cloud Management System</h3>
+                      <div class="entry-meta">Poster Design</div>
+                      <h3 class="entry-title">Influencer</h3>
                       <div class="entry-links">
-                        <a href="./assets/img/portfolio/portfolio-11.webp" class="glightbox" data-gallery="portfolio-gallery-development" data-glightbox="title: Cloud Management System; description: Temporibus autem quibusdam et aut officiis debitis.">
+                        <a href="./assets/img/portfolio/poster_2.png" class="glightbox" data-gallery="portfolio-gallery-development" data-glightbox="title: Cloud Management System; description: Temporibus autem quibusdam et aut officiis debitis.">
                           <i class="bi bi-arrows-angle-expand"></i>
                         </a>
                         <a href="portfolio-details.html">
@@ -914,13 +967,14 @@
             <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-photography">
               <article class="portfolio-entry">
                 <figure class="entry-image">
-                  <img src="./assets/img/portfolio/portfolio-8.webp" class="img-fluid" alt="" loading="lazy">
+                  <img src="./assets/img/portfolio/portfolio_6.jpg" class="img-fluid" alt="" loading="lazy"
+                  style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
                   <div class="entry-overlay">
                     <div class="overlay-content">
-                      <div class="entry-meta">Photography</div>
-                      <h3 class="entry-title">Nature Collection</h3>
+                      <div class="entry-meta">Resume Design</div>
+                      <h3 class="entry-title">Professional Resume</h3>
                       <div class="entry-links">
-                        <a href="./assets/img/portfolio/portfolio-8.webp" class="glightbox" data-gallery="portfolio-gallery-photography" data-glightbox="title: Nature Collection; description: Integer posuere erat a ante venenatis dapibus posuere velit aliquet.">
+                        <a href="./assets/img/portfolio/portfolio_6.jpg" class="glightbox" data-gallery="portfolio-gallery-photography" data-glightbox="title: Nature Collection; description: Integer posuere erat a ante venenatis dapibus posuere velit aliquet.">
                           <i class="bi bi-arrows-angle-expand"></i>
                         </a>
                         <a href="portfolio-details.html">
@@ -979,12 +1033,12 @@
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <div class="team-member d-flex">
               <div class="member-img">
-                <img src="./assets/img/person/person-m-7.webp" class="img-fluid" alt="" loading="lazy">
+                <img src="./assets/img/person/person_1.jpg" class="img-fluid" alt="" loading="lazy">
               </div>
               <div class="member-info flex-grow-1">
-                <h4>Walter White</h4>
-                <span>Chief Executive Officer</span>
-                <p>Aliquam iure quaerat voluptatem praesentium possimus unde laudantium vel dolorum distinctio dire flow</p>
+                <h4>Kanishka S</h4>
+                <span>CEO, SK Creative Corner</span>
+                <p>Visionary leader and creative strategist behind SK Creative Corner. She blends innovation, design thinking, and leadership to bring every creative idea to life with excellence and purpose.</p>
                 <div class="social">
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-twitter-x"></i></a>
@@ -995,15 +1049,15 @@
             </div>
           </div><!-- End Team Member -->
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+          <!-- <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
             <div class="team-member d-flex">
               <div class="member-img">
-                <img src="./assets/img/person/person-f-8.webp" class="img-fluid" alt="" loading="lazy">
+                <img src="./assets/img/person/P1.jpg" class="img-fluid" alt="" loading="lazy">
               </div>
               <div class="member-info flex-grow-1">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
-                <p>Labore ipsam sit consequatur exercitationem rerum laboriosam laudantium aut quod dolores exercitationem ut</p>
+                <h4>Ganesh S</h4>
+                <span>Managing Director, SK Creative Corner</span>
+                <p>Passionate leader driving SK Creative Corner’s growth with creativity and strategy. Ganesh specializes in brand development, visual design, and innovative marketing that connects ideas with real results.</p>
                 <div class="social">
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-twitter-x"></i></a>
@@ -1012,9 +1066,9 @@
                 </div>
               </div>
             </div>
-          </div><!-- End Team Member -->
+          </div> -->
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+          <!-- <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
             <div class="team-member d-flex">
               <div class="member-img">
                 <img src="./assets/img/person/person-m-6.webp" class="img-fluid" alt="" loading="lazy">
@@ -1031,9 +1085,10 @@
                 </div>
               </div>
             </div>
-          </div><!-- End Team Member -->
+          </div> -->
+          <!-- End Team Member -->
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+          <!-- <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
             <div class="team-member d-flex">
               <div class="member-img">
                 <img src="./assets/img/person/person-f-4.webp" class="img-fluid" alt="" loading="lazy">
@@ -1050,9 +1105,10 @@
                 </div>
               </div>
             </div>
-          </div><!-- End Team Member -->
+          </div> -->
+          <!-- End Team Member -->
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
+          <!-- <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
             <div class="team-member d-flex">
               <div class="member-img">
                 <img src="./assets/img/person/person-m-12.webp" class="img-fluid" alt="" loading="lazy">
@@ -1069,9 +1125,10 @@
                 </div>
               </div>
             </div>
-          </div><!-- End Team Member -->
+          </div> -->
+          <!-- End Team Member -->
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="600">
+          <!-- <div class="col-lg-6" data-aos="fade-up" data-aos-delay="600">
             <div class="team-member d-flex">
               <div class="member-img">
                 <img src="./assets/img/person/person-f-9.webp" class="img-fluid" alt="" loading="lazy">
@@ -1088,7 +1145,8 @@
                 </div>
               </div>
             </div>
-          </div><!-- End Team Member -->
+          </div> -->
+          <!-- End Team Member -->
 
         </div>
 
@@ -1449,8 +1507,8 @@
           <p>We transform ideas into designs that speak, inspire, and drive results - blending innovation, strategy, and artistry to make every brand shine brighter.</p>
           <div class="social-links d-flex mt-4">
             <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61582603842063"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/sk_creative_corner/"><i class="bi bi-instagram"></i></a>
             <a href=""><i class="bi bi-linkedin"></i></a>
           </div>
         </div>
