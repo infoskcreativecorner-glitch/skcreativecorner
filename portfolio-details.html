@@ -4,13 +4,13 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Portfolio Details - Strategy Bootstrap Template</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <title>Portfolio Details - SK Creative Corner</title>
+  <meta name="description" content="Explore our creative portfolio showcasing professional design work - logos, posters, resumes, and more by SK Creative Corner.">
+  <meta name="keywords" content="portfolio, design work, creative projects, SK Creative Corner, logo design, poster design">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="./assets/img/logo/Sk_Logo_2.webp" rel="icon">
+  <link href="./assets/img/logo/Sk_Logo_2.webp" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -35,6 +35,62 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
   <style>
+    body {
+      padding-top: 30px;
+    }
+    .header {
+      overflow: visible;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      margin-top: 20px;
+    }
+    .logo {
+      position: relative;
+      z-index: 1000;
+    }
+    .brand-logo {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+      transform-origin: center;
+      cursor: pointer;
+      filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.15));
+      border: 4px solid #2ec4c7;
+      box-shadow: 0 6px 20px rgba(46, 196, 199, 0.25);
+      background: white;
+      margin-top: -30px;
+      margin-bottom: -30px;
+    }
+    .brand-logo:hover {
+      transform: scale(1.08);
+      box-shadow: 0 8px 25px rgba(46, 196, 199, 0.4);
+      border-color: #26b0b3;
+    }
+    .main {
+      margin-top: 30px;
+    }
+    @media (min-width: 1200px) {
+      body {
+        padding-top: 25px;
+      }
+      .header {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-top: 15px;
+      }
+      .brand-logo {
+        width: 90px;
+        height: 90px;
+        margin-top: -25px;
+        margin-bottom: -25px;
+      }
+      .main {
+        margin-top: 25px;
+      }
+    }
+
     /* WhatsApp Floating Button */
     .whatsapp-float {
       position: fixed;
@@ -86,40 +142,23 @@
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.webp" alt=""> -->
-        <h1 class="sitename">Strategy</h1>
+        <img src="./assets/img/logo/Sk_Logo_2.webp" alt="SK Creative Corner" class="brand-logo">
+        <span class="visually-hidden">SK Creative Corner</span>
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="index.html#hero">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#portfolio" class="active">Portfolio</a></li>
+          <li><a href="index.html#team">Team</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="#about">Get Started</a>
+      <a class="btn-getstarted" href="index.html#about">Get Started</a>
 
     </div>
   </header>
@@ -130,7 +169,7 @@
     <div class="page-title dark-background" data-aos="fade">
       <div class="container position-relative">
         <h1>Portfolio Details</h1>
-        <p>Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam molestias.</p>
+        <p>Explore our creative work - where imagination meets execution. Each project tells a unique story of design excellence.</p>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
@@ -176,7 +215,7 @@
                   </script>
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                      <img src="assets/img/portfolio/portfolio-5.webp" alt="Portfolio Image" class="img-fluid">
+                      <img src="assets/img/portfolio/catlogue.jpg" alt="Portfolio Image" class="img-fluid">
                     </div>
                     <div class="swiper-slide">
                       <img src="assets/img/portfolio/portfolio_5.jpg" alt="Portfolio Image" class="img-fluid">
@@ -189,11 +228,11 @@
                   <div class="swiper-button-next"></div>
                 </div>
               </div>
-
+<!-- 
               <div class="thumbnail-grid" data-aos="fade-up" data-aos-delay="200">
                 <div class="row g-2 mt-3">
                   <div class="col-3">
-                    <img src="assets/img/portfolio/portfolio-4.webp" alt="Gallery Image" class="img-fluid glightbox">
+                    <img src="assets/img/portfolio/flyers.jpeg" alt="Gallery Image" class="img-fluid glightbox">
                   </div>
                   <div class="col-3">
                     <img src="assets/img/portfolio/portfolio-6.webp" alt="Gallery Image" class="img-fluid glightbox">
@@ -205,14 +244,14 @@
                     <img src="assets/img/portfolio/portfolio-12.webp" alt="Gallery Image" class="img-fluid glightbox">
                   </div>
                 </div>
-              </div>
+              </div> -->
 
               <div class="tech-stack-badges" data-aos="fade-up" data-aos-delay="300">
-                <span>Angular</span>
-                <span>Express.js</span>
-                <span>PostgreSQL</span>
-                <span>GraphQL</span>
-                <span>Firebase</span>
+                <span>Adobe Photoshop</span>
+                <span>Adobe Illustrator</span>
+                <span>Canva Pro</span>
+                <span>Figma</span>
+                <span>CorelDRAW</span>
               </div>
             </div>
           </div>
@@ -221,30 +260,30 @@
             <div class="portfolio-details-content">
               <div class="project-meta">
                 <div class="badge-wrapper">
-                  <span class="project-badge">UX/UI Design</span>
+                  <span class="project-badge">Creative Design</span>
                 </div>
                 <div class="date-client">
                   <div class="meta-item">
                     <i class="bi bi-calendar-check"></i>
-                    <span>September 2024</span>
+                    <span>2024</span>
                   </div>
                   <div class="meta-item">
                     <i class="bi bi-buildings"></i>
-                    <span>DigitalCraft Solutions</span>
+                    <span>SK Creative Corner</span>
                   </div>
                 </div>
               </div>
 
-              <h2 class="project-title">Innovative Financial Dashboard App</h2>
+              <h2 class="project-title">Professional Design Portfolio</h2>
 
               <div class="project-website">
                 <i class="bi bi-link-45deg"></i>
-                <a href="#" target="_blank">projectwebsite.example.com</a>
+                <a href="https://www.instagram.com/sk_creative_corner/" target="_blank">@sk_creative_corner</a>
               </div>
 
               <div class="project-overview">
                 <p class="lead">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et. Aenean eu enim justo. Vestibulum aliquam hendrerit molestie.
+                  Explore our creative design work showcasing professional layouts, innovative concepts, and strategic visual communication. Each project demonstrates our expertise in delivering high-quality design solutions tailored to client needs.
                 </p>
 
                 <div class="accordion project-accordion" id="portfolio-details-projectAccordion">
@@ -256,7 +295,7 @@
                     </h2>
                     <div id="portfolio-details-collapse-1" class="accordion-collapse collapse show" data-bs-parent="#portfolio-details-projectAccordion">
                       <div class="accordion-body">
-                        <p>Cras ultricies ligula sed magna dictum porta. Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Pellentesque in ipsum id orci porta dapibus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</p>
+                        <p>Our design projects showcase the ability to create professional visual materials that effectively communicate brand values and messages. Each design features clean layouts, strategic use of typography, color theory, and compelling visual hierarchy to engage the target audience and deliver impactful results.</p>
                       </div>
                     </div>
                   </div>
@@ -264,12 +303,12 @@
                   <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
                     <h2 class="accordion-header">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#portfolio-details-collapse-2" aria-expanded="false" aria-controls="collapseTwo">
-                        <i class="bi bi-exclamation-diamond me-2"></i> The Challenge
+                        <i class="bi bi-exclamation-diamond me-2"></i> Our Approach
                       </button>
                     </h2>
                     <div id="portfolio-details-collapse-2" class="accordion-collapse collapse" data-bs-parent="#portfolio-details-projectAccordion">
                       <div class="accordion-body">
-                        <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur aliquet quam id dui posuere blandit. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Sed porttitor lectus nibh.</p>
+                        <p>We understand that every client has unique needs and goals. Our approach involves thorough research, creative brainstorming, and strategic planning to ensure each design solution is tailored to meet specific requirements while maintaining a professional and modern aesthetic that stands out in the market.</p>
                       </div>
                     </div>
                   </div>
@@ -277,12 +316,12 @@
                   <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
                     <h2 class="accordion-header">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#portfolio-details-collapse-3" aria-expanded="false" aria-controls="collapseThree">
-                        <i class="bi bi-award me-2"></i> The Solution
+                        <i class="bi bi-award me-2"></i> Our Expertise
                       </button>
                     </h2>
                     <div id="portfolio-details-collapse-3" class="accordion-collapse collapse" data-bs-parent="#portfolio-details-projectAccordion">
                       <div class="accordion-body">
-                        <p>Donec sollicitudin molestie malesuada. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.</p>
+                        <p>We specialize in creating visually stunning designs with strategic layouts, professional graphics, and clear visual communication. Our work incorporates modern design principles, brand consistency, and excellent attention to detail, ensuring every project delivers maximum impact and meets the highest quality standards.</p>
                       </div>
                     </div>
                   </div>
@@ -290,28 +329,28 @@
               </div>
 
               <div class="project-features" data-aos="fade-up" data-aos-delay="300">
-                <h3><i class="bi bi-stars"></i> Key Features</h3>
+                <h3><i class="bi bi-stars"></i> Our Services</h3>
                 <div class="row g-3">
                   <div class="col-md-6">
                     <ul class="feature-list">
-                      <li><i class="bi bi-check2-circle"></i> Real-time Data Visualization</li>
-                      <li><i class="bi bi-check2-circle"></i> User Role Management</li>
-                      <li><i class="bi bi-check2-circle"></i> Secure Authentication</li>
+                      <li><i class="bi bi-check2-circle"></i> Logo & Brand Design</li>
+                      <li><i class="bi bi-check2-circle"></i> Poster & Flyer Design</li>
+                      <li><i class="bi bi-check2-circle"></i> Resume & CV Design</li>
                     </ul>
                   </div>
                   <div class="col-md-6">
                     <ul class="feature-list">
-                      <li><i class="bi bi-check2-circle"></i> Customizable Dashboards</li>
-                      <li><i class="bi bi-check2-circle"></i> Data Export Options</li>
-                      <li><i class="bi bi-check2-circle"></i> Multi-device Support</li>
+                      <li><i class="bi bi-check2-circle"></i> Video & Photo Editing</li>
+                      <li><i class="bi bi-check2-circle"></i> Presentation Design</li>
+                      <li><i class="bi bi-check2-circle"></i> Website Development</li>
                     </ul>
                   </div>
                 </div>
               </div>
 
               <div class="cta-buttons" data-aos="fade-up" data-aos-delay="400">
-                <a href="#" class="btn-view-project">View Live Project</a>
-                <a href="#" class="btn-next-project">Next Project <i class="bi bi-arrow-right"></i></a>
+                <a href="https://www.instagram.com/sk_creative_corner/" target="_blank" class="btn-view-project">View More Projects</a>
+                <a href="index.html#portfolio" class="btn-next-project">Back to Portfolio <i class="bi bi-arrow-left"></i></a>
               </div>
             </div>
           </div>
@@ -329,59 +368,56 @@
       <div class="row gy-4">
         <div class="col-lg-5 col-md-12 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Strategy</span>
+            <span class="sitename">SK Creative Corner</span>
           </a>
-          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+          <p>We transform ideas into designs that speak, inspire, and drive results - blending innovation, strategy, and artistry to make every brand shine brighter.</p>
           <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61582574324039" target="_blank" rel="noopener noreferrer" title="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/sk_creative_corner/" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.youtube.com/@infoskcreativecorner" target="_blank" rel="noopener noreferrer" title="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="https://threads.com/@sk_creative_corner" target="_blank" rel="noopener noreferrer" title="Threads"><i class="bi bi-threads"></i></a>
+            <a href="https://www.linkedin.com/in/skcreativecorner/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
           </div>
         </div>
 
         <div class="col-lg-2 col-6 footer-links">
           <h4>Useful Links</h4>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About us</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#portfolio">Portfolio</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-6 footer-links">
           <h4>Our Services</h4>
           <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
+            <li><a href="#">Logo & Branding Design</a></li>
+            <li><a href="#">Poster & Social Media Design</a></li>
+            <li><a href="#">Website Design</a></li>
+            <li><a href="#">Video Editing & Intros</a></li>
+            <li><a href="#">Promotions</a></li>
           </ul>
         </div>
 
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
           <h4>Contact Us</h4>
-          <p>A108 Adam Street</p>
-          <p>New York, NY 535022</p>
-          <p>United States</p>
-          <p class="mt-4"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-          <p><strong>Email:</strong> <span>info@example.com</span></p>
+          <p>SK Creative Corner</p>
+          <p>Chennai, Tamil Nadu</p>
+          <p>India</p>
+          <p class="mt-4"><strong>Phone:</strong> <span>+91 98765 43210</span></p>
+          <p><strong>Email:</strong> <span>infoskcreativecorner@gmail.com</span></p>
         </div>
 
       </div>
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Strategy</strong> <span>All Rights Reserved</span></p>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">SK Creative Corner</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Designed with ❤️ by <strong>SK Creative Corner</strong>
       </div>
     </div>
 
