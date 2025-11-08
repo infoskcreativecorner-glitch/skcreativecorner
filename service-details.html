@@ -4,13 +4,13 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Service Details - Strategy Bootstrap Template</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <title>Our Services - SK Creative Corner</title>
+  <meta name="description" content="Explore SK Creative Corner's creative services - branding, design systems, marketing strategies, and digital solutions.">
+  <meta name="keywords" content="creative services, branding, design, marketing, SK Creative Corner">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="./assets/img/logo/Sk_Logo_2.webp" rel="icon">
+  <link href="./assets/img/logo/Sk_Logo_2.webp" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -34,6 +34,105 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <style>
+    body {
+      padding-top: 30px;
+    }
+    .header {
+      overflow: visible;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      margin-top: 20px;
+    }
+    .logo {
+      position: relative;
+      z-index: 1000;
+    }
+    .brand-logo {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+      transform-origin: center;
+      cursor: pointer;
+      filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.15));
+      border: 4px solid #2ec4c7;
+      box-shadow: 0 6px 20px rgba(46, 196, 199, 0.25);
+      background: white;
+      margin-top: -30px;
+      margin-bottom: -30px;
+    }
+    .brand-logo:hover {
+      transform: scale(1.08);
+      box-shadow: 0 8px 25px rgba(46, 196, 199, 0.4);
+      border-color: #26b0b3;
+    }
+    .main {
+      margin-top: 30px;
+    }
+    @media (min-width: 1200px) {
+      body {
+        padding-top: 25px;
+      }
+      .header {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-top: 15px;
+      }
+      .brand-logo {
+        width: 90px;
+        height: 90px;
+        margin-top: -25px;
+        margin-bottom: -25px;
+      }
+      .main {
+        margin-top: 25px;
+      }
+    }
+
+    /* WhatsApp Floating Button */
+    .whatsapp-float {
+      position: fixed;
+      width: 44px;
+      height: 44px;
+      bottom: 75px;
+      right: 15px;
+      background-color: #2ec4c7;
+      color: #fff;
+      border-radius: 50px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(46, 196, 199, 0.4);
+      z-index: 99998;
+      transition: all 0.4s;
+      animation: whatsapp-pulse 2s infinite;
+    }
+
+    .whatsapp-float i {
+      font-size: 24px;
+      color: #fff;
+      line-height: 0;
+    }
+
+    .whatsapp-float:hover {
+      background-color: #26b0b3;
+      transform: scale(1.1);
+      box-shadow: 0 6px 20px rgba(46, 196, 199, 0.6);
+      color: #fff;
+    }
+
+    @keyframes whatsapp-pulse {
+      0% {
+        box-shadow: 0 4px 12px rgba(46, 196, 199, 0.4);
+      }
+      50% {
+        box-shadow: 0 4px 20px rgba(46, 196, 199, 0.7);
+      }
+      100% {
+        box-shadow: 0 4px 12px rgba(46, 196, 199, 0.4);
+      }
+    }
+  </style>
 </head>
 
 <body class="service-details-page">
@@ -43,35 +142,18 @@
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.webp" alt=""> -->
-        <h1 class="sitename">Strategy</h1>
+        <img src="./assets/img/logo/Sk_Logo_2.webp" alt="SK Creative Corner" class="brand-logo">
+        <span class="visually-hidden">SK Creative Corner</span>
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="index.html#hero">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#services" class="active">Services</a></li>
+          <li><a href="index.html#portfolio">Portfolio</a></li>
+          <li><a href="index.html#team">Team</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -86,14 +168,14 @@
     <!-- Page Title -->
     <div class="page-title dark-background" data-aos="fade">
       <div class="container position-relative">
-        <h1>Service Details</h1>
-        <p>Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam molestias.</p>
-        <nav class="breadcrumbs">
+        <h1>Our Services</h1>
+        <p>Transforming ideas into stunning visual experiences through creative design, strategic branding, and innovative marketing solutions.</p>
+        <!-- <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">Service Details</li>
+            <li class="current">Services</li>
           </ol>
-        </nav>
+        </nav> -->
       </div>
     </div><!-- End Page Title -->
 
@@ -107,14 +189,14 @@
           <div class="col-lg-8 order-lg-1 order-2">
             <div class="service-main-content">
               <div class="service-header" data-aos="fade-up">
-                <h1>Digital Marketing Excellence</h1>
+                <h1>Creative Design & Branding Excellence</h1>
                 <div class="service-meta">
                   <span><i class="bi bi-award"></i> Premium Service</span>
-                  <span><i class="bi bi-clock"></i> Since 2015</span>
-                  <span><i class="bi bi-star-fill"></i> 4.9/5 Rating</span>
+                  <span><i class="bi bi-clock"></i> Since 2024</span>
+                  <span><i class="bi bi-star-fill"></i> 5.0/5 Rating</span>
                 </div>
                 <p class="lead">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo erat at malesuada bibendum. Nullam eu risus sit amet nunc fermentum lacinia.
+                  At SK Creative Corner, we transform your vision into reality through innovative design, strategic branding, and powerful marketing solutions. Our creative team brings passion, precision, and expertise to every project.
                 </p>
               </div>
 
@@ -143,9 +225,9 @@
                     <div class="row">
                       <div class="col-md-6">
                         <div class="content-block">
-                          <h3>Strategic Marketing Approach</h3>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis erat nibh. Praesent a nibh at eros sodales finibus. Suspendisse potenti. Sed vitae sagittis nulla.</p>
-                          <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nullam consequat, nulla nec commodo finibus, ipsum magna pretium libero.</p>
+                          <h3>Creative Excellence</h3>
+                          <p>We specialize in crafting unique visual identities that make your brand stand out. From logo design to complete branding systems, our creative approach ensures every element tells your story with impact and authenticity.</p>
+                          <p>Our team combines artistic vision with strategic thinking to deliver designs that not only look stunning but also drive real business results and meaningful connections with your audience.</p>
                         </div>
                       </div>
                       <div class="col-md-6">
@@ -159,32 +241,32 @@
                       <div class="timeline-item">
                         <div class="timeline-marker">01</div>
                         <div class="timeline-content">
-                          <h4>Discovery &amp; Research</h4>
-                          <p>Thorough market analysis and competitor research to define your target audience and marketing goals.</p>
+                          <h4>Discover &amp; Define</h4>
+                          <p>We start with an in-depth consultation to understand your brand, goals, and vision. This helps us uncover opportunities and lay the foundation for a creative strategy tailored just for you.</p>
                         </div>
                       </div>
 
                       <div class="timeline-item">
                         <div class="timeline-marker">02</div>
                         <div class="timeline-content">
-                          <h4>Strategy Development</h4>
-                          <p>Creating comprehensive marketing strategies tailored to your specific business objectives and target demographics.</p>
+                          <h4>Plan &amp; Strategize</h4>
+                          <p>Next, we craft a clear roadmap - blending design thinking with smart marketing strategy. Every detail, from concept to execution, is mapped out to ensure flawless results.</p>
                         </div>
                       </div>
 
                       <div class="timeline-item">
                         <div class="timeline-marker">03</div>
                         <div class="timeline-content">
-                          <h4>Implementation</h4>
-                          <p>Executing the marketing plan across various channels with precise targeting and creative content delivery.</p>
+                          <h4>Create &amp; Develop</h4>
+                          <p>Our creative team brings your vision to life through innovative designs, engaging content, and powerful digital solutions - all built to resonate with your audience.</p>
                         </div>
                       </div>
 
                       <div class="timeline-item">
                         <div class="timeline-marker">04</div>
                         <div class="timeline-content">
-                          <h4>Analysis &amp; Optimization</h4>
-                          <p>Continuous monitoring, data analysis, and strategy refinement to maximize ROI and campaign effectiveness.</p>
+                          <h4>Launch &amp; Elevate</h4>
+                          <p>Once live, we make sure everything performs perfectly. We analyze results, fine-tune performance, and provide continuous support to keep your brand growing strong.</p>
                         </div>
                       </div>
                     </div>
@@ -195,37 +277,37 @@
                       <div class="col-md-6">
                         <div class="benefit-card">
                           <div class="benefit-icon">
-                            <i class="bi bi-graph-up"></i>
+                            <i class="bi bi-palette"></i>
                           </div>
-                          <h4>Increased Brand Visibility</h4>
-                          <p>Expand your digital footprint and reach more potential customers through targeted marketing efforts.</p>
+                          <h4>Unique Brand Identity</h4>
+                          <p>Stand out from the competition with a distinctive visual identity that captures your brand's essence and resonates with your target audience.</p>
                         </div>
                       </div>
                       <div class="col-md-6">
                         <div class="benefit-card">
                           <div class="benefit-icon">
-                            <i class="bi bi-people"></i>
+                            <i class="bi bi-lightbulb"></i>
                           </div>
-                          <h4>Higher Engagement Rates</h4>
-                          <p>Create meaningful connections with your audience through relevant and compelling content strategies.</p>
+                          <h4>Creative Innovation</h4>
+                          <p>Benefit from fresh, innovative design solutions that blend the latest trends with timeless principles to keep your brand ahead of the curve.</p>
                         </div>
                       </div>
                       <div class="col-md-6">
                         <div class="benefit-card">
                           <div class="benefit-icon">
-                            <i class="bi bi-cash-coin"></i>
+                            <i class="bi bi-heart"></i>
                           </div>
-                          <h4>Improved ROI</h4>
-                          <p>Maximize your marketing budget with data-driven campaigns that deliver measurable results.</p>
+                          <h4>Emotional Connection</h4>
+                          <p>Create designs that forge meaningful emotional connections with your audience, building loyalty and trust in your brand.</p>
                         </div>
                       </div>
                       <div class="col-md-6">
                         <div class="benefit-card">
                           <div class="benefit-icon">
-                            <i class="bi bi-bar-chart-line"></i>
+                            <i class="bi bi-graph-up-arrow"></i>
                           </div>
-                          <h4>Data-Driven Decisions</h4>
-                          <p>Make informed marketing choices based on comprehensive analytics and performance metrics.</p>
+                          <h4>Business Growth</h4>
+                          <p>Drive measurable growth through strategic design and marketing solutions that convert attention into action and results.</p>
                         </div>
                       </div>
                     </div>
@@ -234,7 +316,7 @@
               </div>
 
               <div class="service-gallery" data-aos="fade-up" data-aos-delay="300">
-                <h3>Our Marketing Portfolio</h3>
+                <h3>Our Creative Portfolio</h3>
                 <div class="service-details-slider swiper init-swiper">
                   <script type="application/json" class="swiper-config">
                     {
@@ -399,59 +481,55 @@
       <div class="row gy-4">
         <div class="col-lg-5 col-md-12 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Strategy</span>
+            <span class="sitename">SK Creative Corner</span>
           </a>
-          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+          <p>We transform ideas into designs that speak, inspire, and drive results - blending innovation, strategy, and artistry to make every brand shine brighter.</p>
           <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61582603842063" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/sk_creative_corner/" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.instagram.com/kanis_s.k/?hl=en" target="_blank" rel="noopener noreferrer" title="Kanishka's Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/kanishka-s-the-developer/" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.youtube.com/@Kanis_editz_" target="_blank" rel="noopener noreferrer"><i class="bi bi-youtube"></i></a>
           </div>
         </div>
 
         <div class="col-lg-2 col-6 footer-links">
           <h4>Useful Links</h4>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#portfolio">Portfolio</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-6 footer-links">
           <h4>Our Services</h4>
           <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
+            <li><a href="#">Logo & Branding Design</a></li>
+            <li><a href="#">Poster & Social Media Design</a></li>
+            <li><a href="#">Website Design</a></li>
+            <li><a href="#">Video Editing & Intros</a></li>
+            <li><a href="#">Promotions</a></li>
           </ul>
         </div>
 
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
           <h4>Contact Us</h4>
-          <p>A108 Adam Street</p>
-          <p>New York, NY 535022</p>
-          <p>United States</p>
-          <p class="mt-4"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-          <p><strong>Email:</strong> <span>info@example.com</span></p>
+          <p>Tamil Nadu</p>
+          <p>India</p>
+          <p class="mt-4"><strong>Email:</strong> <span>skcreativecorner@gmail.com</span></p>
+          <p><strong>Instagram:</strong> <span>@sk_creative_corner</span></p>
         </div>
 
       </div>
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Strategy</strong> <span>All Rights Reserved</span></p>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">SK Creative Corner</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> | Customized by SK Creative Corner
       </div>
     </div>
 
@@ -459,6 +537,11 @@
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/919363724147?text=Hi,%20May%20I%20have%20some%20additional%20information%20on%20this?" target="_blank" rel="noopener noreferrer" id="whatsapp-float" class="whatsapp-float d-flex align-items-center justify-content-center" title="Chat on WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
 
   <!-- Preloader -->
   <div id="preloader"></div>

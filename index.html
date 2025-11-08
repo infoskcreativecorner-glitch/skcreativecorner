@@ -4,13 +4,13 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index - Strategy Bootstrap Template</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <title>SK Creative Corner - Your Vision, Our Creation</title>
+  <meta name="description" content="SK Creative Corner - Professional design, branding, and marketing solutions. We transform ideas into stunning visual experiences.">
+  <meta name="keywords" content="creative design, branding, logo design, marketing, graphic design, SK Creative Corner">
 
   <!-- Favicons -->
-  <link href="./assets/img/favicon.png" rel="icon">
-  <link href="./assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="./assets/img/logo/Sk_Logo_2.webp" rel="icon">
+  <link href="./assets/img/logo/Sk_Logo_2.webp" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -35,30 +35,159 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
   <style>
+    body {
+      padding-top: 30px;
+    }
     .header {
       overflow: visible;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      margin-top: 20px;
     }
     .logo {
       position: relative;
-      z-index: 2;
+      z-index: 1000;
     }
     .brand-logo {
-      height: 400px;
-      width: auto;
-      margin-top: -10px;
-      transition: transform 0.2s ease;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
       transform-origin: center;
-      cursor: zoom-in;
+      cursor: pointer;
       filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.15));
+      border: 4px solid #2ec4c7;
+      box-shadow: 0 6px 20px rgba(46, 196, 199, 0.25);
+      background: white;
+      margin-top: -30px;
+      margin-bottom: -30px;
     }
     .brand-logo:hover {
       transform: scale(1.08);
+      box-shadow: 0 8px 25px rgba(46, 196, 199, 0.4);
+      border-color: #26b0b3;
+    }
+    .main {
+      margin-top: 30px;
     }
     @media (min-width: 1200px) {
-      .brand-logo {
-        height: 110px;
-        margin-top: -24px;
+      body {
+        padding-top: 25px;
       }
+      .header {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-top: 15px;
+      }
+      .brand-logo {
+        width: 90px;
+        height: 90px;
+        margin-top: -25px;
+        margin-bottom: -25px;
+      }
+      .main {
+        margin-top: 25px;
+      }
+    }
+
+    /* WhatsApp Floating Button */
+    .whatsapp-float {
+      position: fixed;
+      width: 44px;
+      height: 44px;
+      bottom: 75px;
+      right: 15px;
+      background-color: #2ec4c7;
+      color: #fff;
+      border-radius: 50px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(46, 196, 199, 0.4);
+      z-index: 99998;
+      transition: all 0.4s;
+      animation: whatsapp-pulse 2s infinite;
+    }
+
+    .whatsapp-float i {
+      font-size: 24px;
+      color: #fff;
+      line-height: 0;
+    }
+
+    .whatsapp-float:hover {
+      background-color: #26b0b3;
+      transform: scale(1.1);
+      box-shadow: 0 6px 20px rgba(46, 196, 199, 0.6);
+      color: #fff;
+    }
+
+    @keyframes whatsapp-pulse {
+      0% {
+        box-shadow: 0 4px 12px rgba(46, 196, 199, 0.4);
+      }
+      50% {
+        box-shadow: 0 4px 20px rgba(46, 196, 199, 0.7);
+      }
+      100% {
+        box-shadow: 0 4px 12px rgba(46, 196, 199, 0.4);
+      }
+    }
+
+    /* Contact Form Response Messages */
+    .form-response-message {
+      text-align: center;
+      padding: 15px 20px;
+      margin: 20px 0;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 500;
+      box-shadow: 0 4px 15px rgba(46, 196, 199, 0.3);
+      animation: slideDown 0.4s ease-out;
+    }
+
+    .form-response-message.success {
+      background-color: #e8f8f8;
+      color: #2ec4c7;
+      border: 2px solid #2ec4c7;
+    }
+
+    .form-response-message.error {
+      background-color: #ffe8e8;
+      color: #dc3545;
+      border: 2px solid #dc3545;
+      box-shadow: 0 4px 15px rgba(220, 53, 69, 0.3);
+    }
+
+    @keyframes slideDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Button Loading State */
+    .btn-submit {
+      position: relative;
+      min-width: 180px;
+      transition: all 0.3s ease;
+    }
+
+    .btn-submit:disabled {
+      opacity: 0.7;
+      cursor: not-allowed;
+    }
+
+    .spinner-icon {
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
     }
   </style>
 </head>
@@ -309,25 +438,26 @@
                     </div>
                   </div>
 
-                  <div class="swiper-slide">
-                    <div class="testimonial-item">
-                      <div class="rating mb-3">
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-half"></i>
-                      </div>
-                      <p>"Their dedication to delivering superior solutions and their meticulous attention to detail have profoundly impacted our corporate growth trajectory."</p>
-                      <div class="client-info d-flex align-items-center mt-4">
-                        <img src="./assets/img/person/person-f-3.webp" class="client-img" alt="Client" loading="lazy">
-                        <div>
-                          <h6 class="mb-0">Olivia Chen</h6>
-                          <span>Development Strategist</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                <div class="swiper-slide">
+  <div class="testimonial-item">
+    <div class="rating mb-3">
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+    </div>
+    <p>"They did an amazing job designing my resume! The layout was clean, professional, and perfectly highlighted my skills. It really helped me stand out - truly appreciate their creativity & support!"</p>
+    <div class="client-info d-flex align-items-center mt-4">
+      <img src="./assets/img/person/Sanjeev.jpg" class="client-img" alt="Client Sanjeev" loading="lazy">
+      <div>
+        <h6 class="mb-0">Sanjeev</h6>
+        <span>Student</span>
+      </div>
+    </div>
+  </div>
+</div>
+
 
                 </div>
               </div>
@@ -365,7 +495,7 @@
                 <p>
                   At SK Creative Corner, we blend strategic thinking, bold creativity, and cutting-edge design to craft experiences that captivate audiences, elevate brands, and drive measurable growth.
                 </p>
-                <a href="services.html" class="service-btn">
+                <a href="service-details.html" class="service-btn">
                   View All Services
                   <i class="bi bi-arrow-right"></i>
                 </a>
@@ -1040,10 +1170,9 @@
                 <span>CEO, SK Creative Corner</span>
                 <p>Visionary leader and creative strategist behind SK Creative Corner. She blends innovation, design thinking, and leadership to bring every creative idea to life with excellence and purpose.</p>
                 <div class="social">
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                  <a href=""><i class="bi bi-youtube"></i></a>
+                  <a href="https://www.instagram.com/kanis_s.k/?hl=en" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.linkedin.com/in/kanishka-s-the-developer/" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+                  <a href="https://www.youtube.com/@Kanis_editz_" target="_blank" rel="noopener noreferrer"><i class="bi bi-youtube"></i></a>
                 </div>
               </div>
             </div>
@@ -1437,7 +1566,7 @@
             <div class="contact-form-wrapper">
               <h2 class="text-center mb-4">Get in Touch</h2>
 
-              <form action="forms/contact.php" method="post" class="php-email-form">
+              <form id="contactForm">
                 <div class="row g-3">
                   <div class="col-md-6">
                     <div class="form-group">
@@ -1457,7 +1586,16 @@
                     </div>
                   </div>
 
-                  <div class="col-md-12">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <div class="input-with-icon">
+                        <i class="bi bi-telephone"></i>
+                        <input type="tel" class="form-control" name="mobile" placeholder="Mobile Number" required="" pattern="[0-9]{10}" title="Please enter a valid 10-digit mobile number">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
                     <div class="form-group">
                       <div class="input-with-icon">
                         <i class="bi bi-text-left"></i>
@@ -1475,14 +1613,18 @@
                     </div>
                   </div>
 
+                  <!-- Success/Error Messages -->
                   <div class="col-12">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                    <div class="form-response-message" id="responseMessage" style="display: none;"></div>
                   </div>
 
                   <div class="col-12 text-center">
-                    <button type="submit" class="btn btn-primary btn-submit">SEND MESSAGE</button>
+                    <button type="submit" class="btn btn-primary btn-submit" id="submitBtn">
+                      <span class="btn-text">SEND MESSAGE</span>
+                      <span class="btn-spinner" style="display: none;">
+                        <i class="bi bi-arrow-repeat spinner-icon"></i> Sending...
+                      </span>
+                    </button>
                   </div>
                 </div>
               </form>
@@ -1506,10 +1648,11 @@
           </a>
           <p>We transform ideas into designs that speak, inspire, and drive results - blending innovation, strategy, and artistry to make every brand shine brighter.</p>
           <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href="https://www.facebook.com/profile.php?id=61582603842063"><i class="bi bi-facebook"></i></a>
-            <a href="https://www.instagram.com/sk_creative_corner/"><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61582603842063" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/sk_creative_corner/" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.instagram.com/kanis_s.k/?hl=en" target="_blank" rel="noopener noreferrer" title="Kanishka's Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/kanishka-s-the-developer/" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.youtube.com/@Kanis_editz_" target="_blank" rel="noopener noreferrer"><i class="bi bi-youtube"></i></a>
           </div>
         </div>
 
@@ -1563,12 +1706,17 @@
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/919363724147?text=Hi,%20May%20I%20have%20some%20additional%20information%20on%20this?" target="_blank" rel="noopener noreferrer" id="whatsapp-float" class="whatsapp-float d-flex align-items-center justify-content-center" title="Chat on WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
   <!-- Preloader -->
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
   <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="./assets/vendor/php-email-form/validate.js"></script>
+  <!-- <script src="./assets/vendor/php-email-form/validate.js"></script> -->
   <script src="./assets/vendor/aos/aos.js"></script>
   <script src="./assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="./assets/vendor/glightbox/js/glightbox.min.js"></script>
@@ -1577,6 +1725,89 @@
 
   <!-- Main JS File -->
   <script src="./assets/js/main.js"></script>
+
+  <!-- Google Sheets Contact Form Script -->
+  <script>
+    // Google Apps Script Web App URL
+    const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxBx0HIBYwS8mT89eVjQIHR817T9W_hekvUEu9tzKZcP_D2LhmUhrof6D_ro4a_yNjbJA/exec';
+
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      // Get form elements
+      const form = e.target;
+      const submitBtn = document.getElementById('submitBtn');
+      const btnText = submitBtn.querySelector('.btn-text');
+      const btnSpinner = submitBtn.querySelector('.btn-spinner');
+      const responseMessage = document.getElementById('responseMessage');
+
+      // Get form data
+      const formData = {
+        name: form.querySelector('input[name="name"]').value,
+        email: form.querySelector('input[name="email"]').value,
+        mobile: form.querySelector('input[name="mobile"]').value,
+        subject: form.querySelector('input[name="subject"]').value,
+        message: form.querySelector('textarea[name="message"]').value
+      };
+
+      // Validate mobile number (10 digits)
+      const mobilePattern = /^[0-9]{10}$/;
+      if (!mobilePattern.test(formData.mobile)) {
+        responseMessage.textContent = 'Please enter a valid 10-digit mobile number';
+        responseMessage.className = 'form-response-message error';
+        responseMessage.style.display = 'block';
+        return;
+      }
+
+      // Show loading state on button
+      btnText.style.display = 'none';
+      btnSpinner.style.display = 'inline';
+      submitBtn.disabled = true;
+      responseMessage.style.display = 'none';
+
+      // Send data to Google Sheets
+      fetch(GOOGLE_SCRIPT_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData)
+      })
+      .then(() => {
+        // Hide button loading state
+        btnText.style.display = 'inline';
+        btnSpinner.style.display = 'none';
+        submitBtn.disabled = false;
+
+        // Show success message
+        responseMessage.textContent = 'Thank you! Your message has been sent successfully. We will contact you soon!';
+        responseMessage.className = 'form-response-message success';
+        responseMessage.style.display = 'block';
+
+        // Reset form
+        form.reset();
+
+        // Hide success message after 5 seconds
+        setTimeout(() => {
+          responseMessage.style.display = 'none';
+        }, 5000);
+      })
+      .catch(error => {
+        // Hide button loading state
+        btnText.style.display = 'inline';
+        btnSpinner.style.display = 'none';
+        submitBtn.disabled = false;
+
+        // Show error message
+        responseMessage.textContent = 'Sorry, there was an error sending your message. Please try again or contact us directly via WhatsApp.';
+        responseMessage.className = 'form-response-message error';
+        responseMessage.style.display = 'block';
+
+        console.error('Error:', error);
+      });
+    });
+  </script>
 
 </body>
 

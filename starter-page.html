@@ -34,6 +34,49 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <style>
+    /* WhatsApp Floating Button */
+    .whatsapp-float {
+      position: fixed;
+      width: 44px;
+      height: 44px;
+      bottom: 75px;
+      right: 15px;
+      background-color: #2ec4c7;
+      color: #fff;
+      border-radius: 50px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(46, 196, 199, 0.4);
+      z-index: 99998;
+      transition: all 0.4s;
+      animation: whatsapp-pulse 2s infinite;
+    }
+
+    .whatsapp-float i {
+      font-size: 24px;
+      color: #fff;
+      line-height: 0;
+    }
+
+    .whatsapp-float:hover {
+      background-color: #26b0b3;
+      transform: scale(1.1);
+      box-shadow: 0 6px 20px rgba(46, 196, 199, 0.6);
+      color: #fff;
+    }
+
+    @keyframes whatsapp-pulse {
+      0% {
+        box-shadow: 0 4px 12px rgba(46, 196, 199, 0.4);
+      }
+      50% {
+        box-shadow: 0 4px 20px rgba(46, 196, 199, 0.7);
+      }
+      100% {
+        box-shadow: 0 4px 12px rgba(46, 196, 199, 0.4);
+      }
+    }
+  </style>
 </head>
 
 <body class="starter-page-page">
@@ -180,6 +223,11 @@
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/919363724147?text=Hi,%20May%20I%20have%20some%20additional%20information%20on%20this?" target="_blank" rel="noopener noreferrer" id="whatsapp-float" class="whatsapp-float d-flex align-items-center justify-content-center" title="Chat on WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
